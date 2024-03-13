@@ -1,0 +1,92 @@
+.principal{
+    background-color: coral;
+    padding: 10px;
+    display: flex; /*DESPLEGAR LOS OBEJOS DE MANERA FLEXIBLE (UNA AL LADO DE OTRA)*/
+    /*flex-direction: row-reverse;/* FILAS AL REVES */
+    flex-direction: row;
+    /* flex-wrap: wrap; SE RESPETA EL TAMANO DE LAS CAJAS */
+    flex-wrap: wrap;
+    
+    width: 500px; /*LAS CAJAS CON ANCHO SE REDUCEN PORQUE SU CAJA PADRE TIENE ANCHO DE 300PC */
+    height: 500px; 
+    align-content: space-around;
+}
+
+.principal2{
+    background-color: rgb(48, 65, 85);
+    padding: 10px;
+    display: flex; /*DESPLEGAR LOS OBEJOS DE MANERA FLEXIBLE (UNA AL LADO DE OTRA)*/
+    /*flex-direction: row-reverse;/* FILAS AL REVES */
+    flex-direction: row;
+    /* flex-wrap: wrap; SE RESPETA EL TAMANO DE LAS CAJAS */
+    /*flex-wrap: wrap;*/
+    
+
+}
+
+
+
+.caja{
+    background-color: aqua;
+    margin: 5px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    /* display: inline-block; */
+    flex-grow: 5; /*LES DA EL MISMO ANCHO A LAS CAJAS, ASI LO MUEVA LA PANTALLA*/
+
+}
+.caja1{
+    background-color: rgb(97, 207, 42);
+    margin: 5px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    /* display: inline-block; */
+    flex-grow: 2; /*LES DA EL MISMO ANCHO A LAS CAJAS, ASI LO MUEVA LA PANTALLA*/
+    order: 3; /*QUE LA CAJA 1 APAREZCA EN EL ORDER 3 SE NUMERA DESDE EL 0 (PODEMOS REORDENAR LAS POSICIONES EN LAS QUE TRABAJAMOS)*/ 
+
+}
+.caja2{
+    background-color: rgb(223, 245, 18);
+    margin: 5px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    /* display: inline-block; */
+    flex-grow: 5; /*LES DA EL MISMO ANCHO A LAS CAJAS, ASI LO MUEVA LA PANTALLA   [MAS ALTA MAS PRIORIDAD, MAS ANCHO]*/
+    /* FLEX GROW ME DOMINA LOS ANCHOS */
+
+}
+
+.caja3{
+    background-color: rgb(27, 54, 209);
+    margin: 5px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    /* display: inline-block; */
+    flex-grow: 3; /*LES DA EL MISMO ANCHO A LAS CAJAS, ASI LO MUEVA LA PANTALLA*/
+    flex-basis: 5px; /*LO MANTIENE EN UNA FILA*/ 
+    order: 1;
+}
+
+.caja4{
+    background-color: rgb(209, 27, 206);
+    margin: 5px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    /* display: inline-block; */
+    flex-grow: 1; /*LES DA EL MISMO ANCHO A LAS CAJAS, ASI LO MUEVA LA PANTALLA*/
+}
